@@ -23,17 +23,17 @@ function handleDrop(event: DragEvent) {
 <template>
   <div class="container mx-auto">
     <!-- Header -->
-    <header class="relative px-6 pt-14 lg:px-8">
-      <div class="mx-auto max-w-2xl py-32 text-center">
+    <header class="relative px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl py-12 lg:py-24 text-center">
           <img src="/logo.png" alt="Destroyomator Logo" class="mx-auto" />
-          <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">DESTROYOMATOR</h1>
+          <h1 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">DESTROYOMATOR</h1>
           <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Securely destroy sensitive data</p>
         </div>
     </header>
 
     <main class="px-4 py-8">
       <!-- File Upload Area -->
-      <section class="w-2/3 mx-auto mb-24">
+      <section class="max-w-5xl mx-auto mb-12 lg:mb-24">
         <form class="cursor-pointer p-12 flex justify-center border border-dashed rounded-xl"
         @dragenter="dragging = true" @dragleave="dragging = false" :class="[dragging ? 'border-primary-dark' : 'border-primary', dragging ? 'bg-gray-50' : 'bg-white']"
         @dragover.prevent @drop.prevent="handleDrop">
@@ -58,9 +58,9 @@ function handleDrop(event: DragEvent) {
       </section>
 
       <!-- How It Works Section -->
-      <section class="mb-24 w-2/3 mx-auto">
+      <section class="mb-12 lg:mb-24 max-w-5xl mx-auto">
         <h2 class="text-2xl font-semibold text-center mb-6">How It Works</h2>
-        <p class="mb-3">Destroyomator uses advanced destruction techniques to ensure that your sensitive data is irretrievable. Our process includes:</p>
+        <p class="md:text-center mb-3">Destroyomator uses advanced destruction techniques to ensure that your sensitive data is irretrievable. Our process includes:</p>
         <ul class="list-disc list-inside text-left mx-auto max-w-2xl">
           <li>Data Shredding: We overwrite your data multiple times to prevent recovery.</li>
           <li>Secure Deletion: We ensure that deleted files are not recoverable by any means.</li>
@@ -69,12 +69,12 @@ function handleDrop(event: DragEvent) {
       </section>
 
       <!-- License Options Section -->
-      <section>
+      <section class="max-w-5xl mx-auto">
         <h2 class="text-2xl font-semibold text-center mb-6">License Options</h2>
 
         <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <!-- Free Tier -->
-          <div class="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10">
+          <div class="rounded-3xl p-6 ring-1 ring-gray-200 xl:p-8">
             <h3 id="tier-freelancer" class="text-lg/8 font-semibold text-gray-900">Free</h3>
             <p class="mt-6 flex items-baseline gap-x-1">
               <span class="text-4xl font-semibold tracking-tight text-gray-900">free</span>
@@ -87,7 +87,7 @@ function handleDrop(event: DragEvent) {
           </div>
 
           <!-- Pro Tier -->
-          <div class="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10">
+          <div class="rounded-3xl p-6 ring-1 ring-gray-200 xl:p-8">
             <h3 id="tier-freelancer" class="text-lg/8 font-semibold text-gray-900">Pro</h3>
             <p class="mt-6 flex items-baseline gap-x-1">
               <span class="text-4xl font-semibold tracking-tight text-gray-900">$19</span>
@@ -102,7 +102,7 @@ function handleDrop(event: DragEvent) {
           </div>
 
           <!-- Enterprise Tier -->
-          <div class="rounded-3xl p-8 ring-1 ring-gray-200 xl:p-10">
+          <div class="rounded-3xl p-6 ring-1 ring-gray-200 xl:p-8">
             <h3 id="tier-freelancer" class="text-lg/8 font-semibold text-gray-900">Enterprise</h3>
             <p class="mt-6 flex items-baseline gap-x-1">
               <span class="text-4xl font-semibold tracking-tight text-gray-900">$99</span>
