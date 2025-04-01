@@ -154,7 +154,9 @@ function handleDrop(event: DragEvent) {
     </TransitionRoot>
 
     <!-- Footer -->
-    <footer class="text-white py-4 text-center">
+    <footer class="text-gray-500 py-4 text-center">
+      <a class="px-3 py-2 font-semibold" href="https://cryptomator.org/impressum/" target="_self" rel="noopener">Impressum</a>
+      <a class="px-3 py-2 font-semibold" href="https://cryptomator.org/privacy/" target="_self" rel="noopener">Privacy Policy</a>
       <p>&copy; 2025 DESTROYOMATOR. All rights reserved.</p>
     </footer>
   </div>
