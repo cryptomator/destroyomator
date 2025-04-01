@@ -25,10 +25,10 @@ function handleDrop(event: DragEvent) {
     <!-- Header -->
     <header class="relative px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-12 lg:py-24 text-center">
-          <img src="/logo.svg" alt="Destroyomator Logo" class="mx-auto size-40" />
-          <h1 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">DESTROYOMATOR</h1>
-          <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Securely destroy sensitive data</p>
-        </div>
+        <img src="/logo.svg" alt="Destroyomator Logo" class="mx-auto size-40" />
+        <h1 class="mt-4 text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">DESTROYOMATOR</h1>
+        <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Securely destroy sensitive data</p>
+      </div>
     </header>
 
     <main class="px-4 py-8">
@@ -154,10 +154,13 @@ function handleDrop(event: DragEvent) {
     </TransitionRoot>
 
     <!-- Footer -->
-    <footer class="text-gray-500 py-4 text-center">
-      <a class="px-3 py-2 font-semibold" href="https://cryptomator.org/impressum/" target="_self" rel="noopener">Impressum</a>
-      <a class="px-3 py-2 font-semibold" href="https://cryptomator.org/privacy/" target="_self" rel="noopener">Privacy Policy</a>
-      <p>&copy; 2025 DESTROYOMATOR. All rights reserved.</p>
+    <footer class="text-gray-500 py-12 text-center">
+      <div class="flex items-center justify-center gap-2">
+        <a class="font-semibold" href="https://cryptomator.org/impressum/" target="_self" rel="noopener">Impressum</a>
+        <span>•</span>
+        <a class="font-semibold" href="https://cryptomator.org/privacy/" target="_self" rel="noopener">Privacy Policy</a>
+      </div>
+      <p class="mt-2">&copy; 2025 Destroyomator. All rights reserved.</p>
     </footer>
   </div>
 </template>
