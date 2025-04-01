@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
+import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue';
+import { ref } from 'vue';
 
 const dragging = ref(false);
 const deleting = ref(false);
@@ -25,7 +25,7 @@ function handleDrop(event: DragEvent) {
     <!-- Header -->
     <header class="relative px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-12 lg:py-24 text-center">
-          <img src="/logo.png" alt="Destroyomator Logo" class="mx-auto" />
+          <img src="/logo.svg" alt="Destroyomator Logo" class="mx-auto size-40" />
           <h1 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">DESTROYOMATOR</h1>
           <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Securely destroy sensitive data</p>
         </div>
