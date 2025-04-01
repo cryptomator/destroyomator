@@ -138,7 +138,7 @@ function handleDrop(event: DragEvent) {
                   <div class="mt-3 text-center sm:mt-5">
                     <DialogTitle as="h3" class="text-base font-semibold text-gray-900">This is a joke</DialogTitle>
                     <div class="mt-2">
-                      <p class="text-sm text-gray-500 mb-2">Once sensitive data is uploaded, you can't be sure how it is processed. Better use Cryptomator to encrypt data before they leave your device!</p>
+                      <p class="text-sm text-gray-500 mb-2">Once sensitive data is uploaded, you can't be sure how it is processed. Better use Cryptomator to encrypt files before they leave your device!</p>
                       <p class="text-sm text-gray-500 mb-2">No worries, no actual data has been transferred.</p>
                     </div>
                   </div>
